@@ -1,0 +1,53 @@
+.contact-form {
+  @include mobile {
+    margin-bottom: 60px;
+  }
+
+  @include tablet-landscape-up {
+    flex-basis: 0;
+    flex-grow: 3;
+    margin: 25px 0;
+  }
+
+  label {
+    color: #33323dd0;
+    font-family: "Public Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 900;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  select,
+  textarea {
+    background-color: #e4e3e3;
+    border: 1px solid #eaeaeb; /* Gray border */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    font-family: "Public Sans", sans-serif;
+    font-size: 12px;
+    margin: 12px 0 24px 0;
+    padding: 16px;
+    resize: none;
+    width: 100%;
+  }
+
+  ::placeholder {
+    color: #a2a2a2;
+  }
+
+  input[type="submit"] {
+    background-color: #203a4c;
+    border: none;
+    color: #fafafa;
+    cursor: pointer;
+    font-family: "Public Sans", serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    padding: 18px 40px;
+    text-transform: uppercase;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #5fb4a2;
+  }
+}

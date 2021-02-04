@@ -1,0 +1,253 @@
+.project-hero {
+  @include mobile {
+    margin-bottom: 30px;
+  }
+
+  @include tablet-landscape-up {
+    margin-top: 25px;
+  }
+
+  img {
+    @include mobile {
+      width: 100%;
+    }
+
+    @include tablet-portrait-up {
+      width: 100%;
+    }
+  }
+}
+
+.project {
+  display: flex;
+
+  @include mobile {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  @include tablet-portrait-up {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  @include tablet-landscape-up {
+    padding-top: 3rem;
+    flex-direction: row;
+  }
+
+  .left-desc {
+    border-top: 1px solid #eaeaeb;
+
+    @include mobile {
+      margin: 0;
+    }
+
+    @include tablet-portrait-up {
+      margin: 35px 0px;
+      position: relative;
+    }
+
+    @include tablet-landscape-up {
+      flex-basis: 0;
+      flex-grow: 1;
+      margin-right: 4rem;
+    }
+
+    h2 {
+      color: #33323d;
+      font-family: "Ibarra Real Nova", serif;
+      font-size: 36px;
+
+      @include tablet-portrait-up {
+        margin-bottom: 20px;
+      }
+    }
+
+    .project-environment {
+      color: #33323db6;
+      font-family: "Public Sans", sans-serif;
+      font-size: 16px;
+      line-height: 30px;
+
+      @include tablet-portrait-up {
+        position: absolute;
+        right: 0;
+        top: 20px;
+        width: 47%;
+      }
+
+      @include tablet-landscape-up {
+        position: initial;
+        width: auto;
+      }
+    }
+
+    .project-lang {
+      color: #5fb4a2;
+      font-family: "Public Sans", sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    p:nth-of-type(2) {
+      @include tablet-portrait-up {
+        padding: 0;
+        margin-top: 0;
+      }
+
+      @include tablet-landscape-up {
+        padding-top: 8px;
+      }
+    }
+  }
+
+  .right-desc {
+    padding-left: 32px;
+    // width: 645px;
+
+    @include mobile {
+      padding: 0;
+      width: 100%;
+    }
+
+    @include tablet-portrait-up {
+      padding: 0;
+      width: 100%;
+    }
+
+    @include tablet-landscape-up {
+      flex-basis: 0;
+      flex-grow: 2;
+    }
+
+    h3 {
+      color: #33323d;
+      font-family: "Ibarra Real Nova", serif;
+      font-size: 30px;
+      font-weight: 500;
+      margin-top: 0;
+
+      @include mobile {
+        margin-top: 40px;
+      }
+
+      @include tablet-portrait-up {
+        margin-top: 40px;
+      }
+    }
+
+    .background {
+      p {
+        color: #33323da7;
+        font-family: "Public Sans", sans-serif;
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: 32px;
+      }
+    }
+
+    .previews {
+      // width: 100%;
+
+      .preview-img {
+        margin-bottom: 40px;
+
+        @include mobile {
+          width: 100%;
+        }
+
+        @include tablet-portrait-up {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.project-slide {
+  display: flex;
+  justify-content: space-between;
+
+  .prev-next-1,
+  .prev-next-2 {
+    margin: 24px 0 54px 0;
+    padding: 32px 0;
+    width: 100%;
+
+    @include mobile {
+      padding: 20px 0;
+    }
+
+    a {
+      color: #33323d;
+      text-decoration: none;
+    }
+
+    .previous,
+    .next {
+      display: flex;
+      align-items: center;
+
+      .left-slide,
+      .right-slide {
+        p {
+          font-family: "Ibarra Real Nova", serif;
+          font-size: 28px;
+          margin: 3px 0;
+        }
+
+        span {
+          color: #a5a5a5;
+          font-family: "Public Sans", sans-serif;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .prev-next-1 {
+    border-bottom: 1px solid #eaeaeb;
+    border-right: 1px solid #eaeaeb;
+    border-top: 1px solid #eaeaeb;
+
+    .previous {
+      @include mobile {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      svg {
+        padding-right: 20px;
+
+        @include mobile {
+          padding-bottom: 8px;
+        }
+      }
+    }
+  }
+
+  .prev-next-2 {
+    border-bottom: 1px solid #eaeaeb;
+    border-top: 1px solid #eaeaeb;
+    display: flex;
+    justify-content: flex-end;
+
+    .next {
+      text-align: right;
+
+      @include mobile {
+        align-items: flex-end;
+        flex-direction: column-reverse;
+      }
+
+      svg {
+        padding-left: 20px;
+
+        @include mobile {
+          padding-bottom: 8px;
+        }
+      }
+    }
+  }
+}

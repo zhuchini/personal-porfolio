@@ -1,0 +1,84 @@
+@mixin white-btn {
+  background-color: white;
+  border: 1px solid #33323d;
+  color: #33323d;
+  cursor: pointer;
+  font-family: "Public Sans", sans-serif;
+  font-size: 12px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  padding: 16px 32px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@mixin contact-me-div {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #eaeaeb;
+}
+
+@mixin contact-h2 {
+  color: #33323d;
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 38px;
+  font-weight: bold;
+  margin: 0;
+}
+
+@mixin social-icons {
+  ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    float: left;
+  }
+
+  .fab {
+    font-size: 1.5rem;
+  }
+
+  li:hover > .fa-github {
+    color: #787878;
+  }
+
+  li:hover > .fa-twitter {
+    color: #1a91da;
+  }
+
+  li:hover > .fa-linkedin {
+    color: #0a66c2;
+  }
+}
+
+// Media queries
+
+@mixin mobile {
+  @media (max-width: 600px) {
+    @content;
+  }
+}
+@mixin tablet-portrait-up {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+@mixin tablet-landscape-up {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+@mixin desktop-up {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin big-desktop-up {
+  @media (min-width: 1800px) {
+    @content;
+  }
+}

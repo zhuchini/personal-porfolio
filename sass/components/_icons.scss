@@ -1,0 +1,25 @@
+// Footer
+.social-icons {
+  @include social-icons;
+
+  li {
+    padding-left: 12px;
+
+    @include mobile {
+      padding: 7px;
+    }
+  }
+
+  .fab {
+    color: #eaeaeb;
+  }
+}
+
+// Contact Me Page
+.social-icons-2 {
+  @include social-icons;
+
+  li {
+    padding-right: 12px;
+  }
+}

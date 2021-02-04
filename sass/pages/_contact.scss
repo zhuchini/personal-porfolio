@@ -1,0 +1,100 @@
+.upper {
+  @include contact-me-div;
+  margin-top: 10px;
+
+  @include mobile {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  @include tablet-portrait-up {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  @include tablet-landscape-up {
+    flex-direction: row;
+  }
+
+  .left-title {
+    flex-basis: 0;
+    flex-grow: 2;
+
+    h2 {
+      @include contact-h2;
+
+      @include mobile {
+        margin: 25px 0;
+      }
+
+      @include tablet-portrait-up {
+        margin: 25px 0;
+      }
+    }
+  }
+
+  .sellout {
+    flex-basis: 0;
+    flex-grow: 3;
+
+    p {
+      color: #33323da7;
+      font-family: "Public Sans", sans-serif;
+      font-size: 16px;
+      line-height: 30px;
+
+      @include mobile {
+        margin-top: 0;
+      }
+
+      @include tablet-portrait-up {
+        margin-top: 0;
+      }
+
+      @include tablet-landscape-up {
+        margin: 25px 0;
+      }
+    }
+  }
+}
+
+.lower {
+  @include contact-me-div;
+  margin-top: 20px;
+  padding: 35px 0;
+
+  @include mobile {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  @include tablet-portrait-up {
+    flex-direction: column;
+    padding: 0 0 60px;
+  }
+
+  @include tablet-landscape-up {
+    flex-direction: row;
+  }
+
+  .left-title {
+    flex-basis: 0;
+    flex-grow: 2;
+
+    h2 {
+      @include contact-h2;
+
+      @include mobile {
+        margin: 25px 0;
+      }
+
+      @include tablet-portrait-up {
+        margin: 25px 0;
+      }
+    }
+  }
+}
+
+// :required {
+//   border: 1px solid #f43030;
+// }
