@@ -1,19 +1,29 @@
 html {
+  display: table;
+  height: 100%;
+  width: 100%;
+  position: relative;
   scroll-behavior: smooth;
 }
 
 body {
   background-color: #fafafa;
+  display: table-cell;
+  width: 100%;
+}
+
+html,
+body {
   margin: 0;
-  min-height: 100vh;
-  position: relative;
+  padding: 0;
+  overflow: auto;
 }
 
 .container {
   margin: auto;
   box-sizing: border-box;
   max-width: 1080px;
-  padding-bottom: 1rem;
+  // position: relative;
 
   @include mobile {
     padding: 0 30px;

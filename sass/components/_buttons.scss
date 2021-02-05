@@ -1,46 +1,46 @@
-.banner-btn {
-  display: flex;
+// .banner-btn {
+//   display: flex;
 
-  @include mobile {
-    margin-bottom: 6rem;
-  }
+//   @include mobile {
+//     margin-bottom: 6rem;
+//   }
 
-  .down-arrow {
-    background-color: #1d3444;
-    cursor: pointer;
-    padding: 13px;
-    display: block;
+//   .down-arrow {
+//     background-color: #1d3444;
+//     cursor: pointer;
+//     padding: 13px;
+//     display: block;
 
-    svg {
-      fill: none;
-      fill-rule: evenodd;
-    }
-  }
+//     svg {
+//       fill: none;
+//       fill-rule: evenodd;
+//     }
+//   }
 
-  a {
-    text-decoration: none;
-    color: #fafafa;
-  }
+//   a {
+//     text-decoration: none;
+//     color: #fafafa;
+//   }
 
-  .about-me-btn {
-    cursor: pointer;
-    background-color: #203a4c;
-    border: none;
-    font-family: "Public Sans", serif;
-    font-size: 11px;
-    letter-spacing: 2px;
-    padding: 16px 36px;
-    text-transform: uppercase;
-  }
+//   .about-me-btn {
+//     cursor: pointer;
+//     background-color: #203a4c;
+//     border: none;
+//     font-family: "Public Sans", serif;
+//     font-size: 11px;
+//     letter-spacing: 2px;
+//     padding: 16px 36px;
+//     text-transform: uppercase;
+//   }
 
-  &:hover .down-arrow {
-    background-color: #57a292;
-  }
+//   &:hover .down-arrow {
+//     background-color: #57a292;
+//   }
 
-  &:hover .about-me-btn {
-    background-color: #5fb4a2;
-  }
-}
+//   &:hover .about-me-btn {
+//     background-color: #5fb4a2;
+//   }
+// }
 
 .portfolio-btn {
   margin-top: 40px;

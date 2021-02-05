@@ -42,6 +42,7 @@
       font-family: "Public Sans", sans-serif;
       font-size: 16px;
       line-height: 30px;
+      text-align: justify;
 
       @include mobile {
         margin-top: 0;
@@ -70,7 +71,7 @@
 
   @include tablet-portrait-up {
     flex-direction: column;
-    padding: 0 0 60px;
+    padding: 0 0 8rem;
   }
 
   @include tablet-landscape-up {
