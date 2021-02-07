@@ -49,6 +49,7 @@
   }
 
   .menu-opened {
+    opacity: 100;
     .topBar {
       transform: rotate(45deg);
       top: 2px;

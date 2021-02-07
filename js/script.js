@@ -8,11 +8,11 @@ const headerContentMarkup = `
         <div class="bar topBar"></div>
         <div class="bar btmBar"></div>
       </div>
-    <ul class="menu nav-menu">
-      <li class="menu-item"><a href="contact.html?linkindex=0" class="link">Contact Me</a></li>
-      <li class="menu-item"><a href="portfolio.html?linkindex=1" class="link">Portfolio</a></li>
-      <li class="menu-item"><a href="index.html?linkindex=2" class="link">Home</a></li>
-    </ul>
+      <ul class="menu nav-menu">
+        <li class="menu-item"><a href="#contact" class="link">Contact</a></li>
+        <li class="menu-item"><a href="portfolio.html?linkindex=1" class="link">Portfolio</a></li>
+        <li class="menu-item"><a href="index.html?linkindex=2" class="link">Home</a></li>
+      </ul>
 `
 const footerContentMarkup = `
   <div class="left-footer">
@@ -30,9 +30,9 @@ const footerContentMarkup = `
   <div class="right-footer">
     <div class="social-icons">
       <ul>
-        <li><i class="fab fa-github" aria-hidden="true"></i></li>
-        <li><i class="fab fa-twitter" aria-hidden="true"></i></li>
-        <li><i class="fab fa-linkedin" aria-hidden="true"></i></li>
+        <li><a href="https://github.com/zhuchini" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+        <li><a href="https://twitter.com/Mickuruh" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/zhumike/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
       </ul>
     </div>
   </div>
@@ -65,6 +65,7 @@ function highlightActiveLink() {
 
 highlightActiveLink();
 
+const body = document.querySelector('body');
 const header = document.querySelector('.header');
 const burger = document.querySelector('#burger');
 const menuItems = document.querySelector('.nav-menu');
@@ -73,6 +74,7 @@ const logoBlack = document.querySelector('.logo');
 const logoWhite = document.querySelector('.logo-2');
     
 burger.addEventListener('click', () => {
+  body.classList.toggle('blur-container');
   header.classList.toggle('menu-opened');
   burger.classList.toggle('menu-opened');
   menuItems.classList.toggle('menu-opened');

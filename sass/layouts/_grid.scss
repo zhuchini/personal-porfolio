@@ -12,6 +12,12 @@ body {
   width: 100%;
 }
 
+.blur-container {
+  .container {
+    filter: blur(2px);
+  }
+}
+
 html,
 body {
   margin: 0;
@@ -23,7 +29,6 @@ body {
   margin: auto;
   box-sizing: border-box;
   max-width: 1080px;
-  // position: relative;
 
   @include mobile {
     padding: 0 30px;

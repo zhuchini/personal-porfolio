@@ -1,101 +1,88 @@
-.upper {
-  @include contact-me-div;
-  margin-top: 10px;
+// .upper {
+//   @include contact-me-div;
+//   padding-top: 25px;
 
-  @include mobile {
-    flex-direction: column;
-    padding: 0;
-  }
+//   @include mobile {
+//     flex-direction: column;
+//   }
 
-  @include tablet-portrait-up {
-    flex-direction: column;
-    padding: 0;
-  }
+//   @include tablet-portrait-up {
+//     flex-direction: column;
+//   }
 
-  @include tablet-landscape-up {
-    flex-direction: row;
-  }
+//   @include tablet-landscape-up {
+//     flex-direction: row;
+//   }
 
-  .left-title {
-    flex-basis: 0;
-    flex-grow: 2;
+//   .left-title {
+//     flex-basis: 0;
+//     flex-grow: 2;
 
-    h2 {
-      @include contact-h2;
+//     h2 {
+//       @include contact-h2;
+//       margin-bottom: 25px;
+//     }
+//   }
 
-      @include mobile {
-        margin: 25px 0;
-      }
+//   .sellout {
+//     flex-basis: 0;
+//     flex-grow: 3;
 
-      @include tablet-portrait-up {
-        margin: 25px 0;
-      }
-    }
-  }
+//     p {
+//       color: #33323da7;
+//       font-family: "Public Sans", sans-serif;
+//       font-size: 16px;
+//       line-height: 25px;
+//       text-align: justify;
 
-  .sellout {
-    flex-basis: 0;
-    flex-grow: 3;
+//       @include mobile {
+//         margin-top: 0;
+//       }
 
-    p {
-      color: #33323da7;
-      font-family: "Public Sans", sans-serif;
-      font-size: 16px;
-      line-height: 30px;
-      text-align: justify;
+//       @include tablet-portrait-up {
+//         margin-top: 0;
+//       }
 
-      @include mobile {
-        margin-top: 0;
-      }
+//       @include tablet-landscape-up {
+//         margin: 0 0 15px;
+//       }
+//     }
+//   }
+// }
 
-      @include tablet-portrait-up {
-        margin-top: 0;
-      }
+// .lower {
+//   @include contact-me-div;
+//   margin-top: 20px;
+//   padding: 35px 0;
 
-      @include tablet-landscape-up {
-        margin: 25px 0;
-      }
-    }
-  }
-}
+//   @include mobile {
+//     flex-direction: column;
+//     padding: 0;
+//   }
 
-.lower {
-  @include contact-me-div;
-  margin-top: 20px;
-  padding: 35px 0;
+//   @include tablet-portrait-up {
+//     flex-direction: column;
+//     padding: 0 0 8rem;
+//   }
 
-  @include mobile {
-    flex-direction: column;
-    padding: 0;
-  }
+//   @include tablet-landscape-up {
+//     flex-direction: row;
+//   }
 
-  @include tablet-portrait-up {
-    flex-direction: column;
-    padding: 0 0 8rem;
-  }
+//   .left-title {
+//     flex-basis: 0;
+//     flex-grow: 2;
 
-  @include tablet-landscape-up {
-    flex-direction: row;
-  }
+//     h2 {
+//       @include contact-h2;
 
-  .left-title {
-    flex-basis: 0;
-    flex-grow: 2;
+//       @include mobile {
+//         margin: 25px 0;
+//       }
 
-    h2 {
-      @include contact-h2;
-
-      @include mobile {
-        margin: 25px 0;
-      }
-
-      @include tablet-portrait-up {
-        margin: 25px 0;
-      }
-    }
-  }
-}
-
-// :required {
-//   border: 1px solid #f43030;
+//       @include tablet-portrait-up {
+//         margin: 25px 0;
+//       }
+//     }
+//   }
 // }

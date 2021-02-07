@@ -15,7 +15,7 @@
 @mixin contact-me-div {
   display: flex;
   justify-content: space-between;
-  border-top: 1px solid #eaeaeb;
+  // border-top: 1px solid #eaeaeb;
 }
 
 @mixin contact-h2 {
@@ -23,7 +23,6 @@
   font-family: "Ibarra Real Nova", serif;
   font-size: 38px;
   font-weight: bold;
-  margin: 0;
 }
 
 @mixin social-icons {
@@ -36,18 +35,18 @@
 
   li {
     float: left;
-  }
 
-  li:hover > .fa-github {
-    color: #787878;
-  }
+    a:hover > .fa-github {
+      color: #787878;
+    }
 
-  li:hover > .fa-twitter {
-    color: #1a91da;
-  }
+    a:hover > .fa-twitter {
+      color: #1a91da;
+    }
 
-  li:hover > .fa-linkedin {
-    color: #0a66c2;
+    a:hover > .fa-linkedin {
+      color: #0a66c2;
+    }
   }
 }
 

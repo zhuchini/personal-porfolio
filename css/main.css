@@ -214,15 +214,15 @@
   float: left;
 }
 
-.social-icons li:hover > .fa-github {
+.social-icons li a:hover > .fa-github {
   color: #787878;
 }
 
-.social-icons li:hover > .fa-twitter {
+.social-icons li a:hover > .fa-twitter {
   color: #1a91da;
 }
 
-.social-icons li:hover > .fa-linkedin {
+.social-icons li a:hover > .fa-linkedin {
   color: #0a66c2;
 }
 
@@ -266,15 +266,15 @@
   float: left;
 }
 
-.social-icons-2 li:hover > .fa-github {
+.social-icons-2 li a:hover > .fa-github {
   color: #787878;
 }
 
-.social-icons-2 li:hover > .fa-twitter {
+.social-icons-2 li a:hover > .fa-twitter {
   color: #1a91da;
 }
 
-.social-icons-2 li:hover > .fa-linkedin {
+.social-icons-2 li a:hover > .fa-linkedin {
   color: #0a66c2;
 }
 
@@ -284,9 +284,7 @@
 
 footer {
   background-color: #33323d;
-  bottom: 0;
   margin: auto;
-  position: absolute;
   width: 100%;
 }
 
@@ -395,6 +393,11 @@ body {
   width: 100%;
 }
 
+.blur-container .container {
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+
 html,
 body {
   margin: 0;
@@ -499,6 +502,10 @@ body {
   background: #fff;
 }
 
+.header .menu-opened {
+  opacity: 100;
+}
+
 .header .menu-opened .topBar {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -580,177 +587,6 @@ body {
   .header .nav-menu.menu-opened .menu-item {
     -webkit-transition-delay: 0.3s;
             transition-delay: 0.3s;
-  }
-}
-
-.upper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  border-top: 1px solid #eaeaeb;
-  margin-top: 10px;
-}
-
-@media (max-width: 600px) {
-  .upper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 0;
-  }
-}
-
-@media (min-width: 600px) {
-  .upper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 0;
-  }
-}
-
-@media (min-width: 900px) {
-  .upper {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-}
-
-.upper .left-title {
-  -ms-flex-preferred-size: 0;
-      flex-basis: 0;
-  -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
-}
-
-.upper .left-title h2 {
-  color: #33323d;
-  font-family: "Ibarra Real Nova", serif;
-  font-size: 38px;
-  font-weight: bold;
-  margin: 0;
-}
-
-@media (max-width: 600px) {
-  .upper .left-title h2 {
-    margin: 25px 0;
-  }
-}
-
-@media (min-width: 600px) {
-  .upper .left-title h2 {
-    margin: 25px 0;
-  }
-}
-
-.upper .sellout {
-  -ms-flex-preferred-size: 0;
-      flex-basis: 0;
-  -webkit-box-flex: 3;
-      -ms-flex-positive: 3;
-          flex-grow: 3;
-}
-
-.upper .sellout p {
-  color: #33323da7;
-  font-family: "Public Sans", sans-serif;
-  font-size: 16px;
-  line-height: 30px;
-  text-align: justify;
-}
-
-@media (max-width: 600px) {
-  .upper .sellout p {
-    margin-top: 0;
-  }
-}
-
-@media (min-width: 600px) {
-  .upper .sellout p {
-    margin-top: 0;
-  }
-}
-
-@media (min-width: 900px) {
-  .upper .sellout p {
-    margin: 25px 0;
-  }
-}
-
-.lower {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  border-top: 1px solid #eaeaeb;
-  margin-top: 20px;
-  padding: 35px 0;
-}
-
-@media (max-width: 600px) {
-  .lower {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 0;
-  }
-}
-
-@media (min-width: 600px) {
-  .lower {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 0 0 8rem;
-  }
-}
-
-@media (min-width: 900px) {
-  .lower {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-}
-
-.lower .left-title {
-  -ms-flex-preferred-size: 0;
-      flex-basis: 0;
-  -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
-}
-
-.lower .left-title h2 {
-  color: #33323d;
-  font-family: "Ibarra Real Nova", serif;
-  font-size: 38px;
-  font-weight: bold;
-  margin: 0;
-}
-
-@media (max-width: 600px) {
-  .lower .left-title h2 {
-    margin: 25px 0;
-  }
-}
-
-@media (min-width: 600px) {
-  .lower .left-title h2 {
-    margin: 25px 0;
   }
 }
 
@@ -847,7 +683,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 5rem 0;
+  margin: 6rem 0;
 }
 
 @media (max-width: 600px) {
@@ -940,7 +776,7 @@ body {
   color: #33323db6;
   font-family: "Public Sans", sans-serif;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 25px;
   text-align: justify;
 }
 
@@ -976,13 +812,7 @@ body {
 
 @media (min-width: 600px) {
   .contact-bottom {
-    padding-bottom: 80px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .contact-bottom {
-    padding-bottom: 8rem;
+    padding: 1rem 0 3rem;
   }
 }
 
@@ -994,7 +824,7 @@ body {
 
 .contact-bottom .contact-text h3 {
   font-family: "Ibarra Real Nova", serif;
-  font-size: 40px;
+  font-size: 38px;
 }
 
 @media (max-width: 600px) {
@@ -1005,9 +835,8 @@ body {
 
 @media (min-width: 600px) {
   .contact-bottom .contact-text h3 {
-    font-size: 35px;
-    max-width: 360px;
-    width: 100vw;
+    font-size: 32px;
+    max-width: 330px;
   }
 }
 
@@ -1029,6 +858,47 @@ body {
             flex: 1;
     width: 40%;
   }
+}
+
+#contact h2 {
+  color: #33323d;
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 38px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#contact p {
+  color: #33323da7;
+  font-family: "Public Sans", sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#contact .contact-homepage {
+  margin: 50px 0 80px;
+  text-align: center;
+}
+
+#contact .contact-homepage a {
+  background-color: white;
+  border: 1px solid #33323d;
+  color: #33323d;
+  cursor: pointer;
+  font-family: "Public Sans", sans-serif;
+  font-size: 12px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  padding: 16px 32px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#contact .contact-homepage a:hover {
+  background-color: #33323d;
+  color: #fafafa;
 }
 
 .project-preview {
@@ -1158,7 +1028,7 @@ body {
   color: #33323db6;
   font-family: "Public Sans", sans-serif;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 25px;
   margin: 0;
   text-align: justify;
 }
@@ -1262,7 +1132,7 @@ body {
 
 @media (min-width: 600px) {
   .project .left-desc {
-    margin: 35px 0px;
+    margin: 35px 0 20px;
     position: relative;
   }
 }
@@ -1281,20 +1151,14 @@ body {
 .project .left-desc h2 {
   color: #33323d;
   font-family: "Ibarra Real Nova", serif;
-  font-size: 36px;
-}
-
-@media (min-width: 600px) {
-  .project .left-desc h2 {
-    margin-bottom: 20px;
-  }
+  font-size: 32px;
 }
 
 .project .left-desc .project-environment {
   color: #33323db6;
   font-family: "Public Sans", sans-serif;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 25px;
   text-align: justify;
 }
 
@@ -1319,19 +1183,6 @@ body {
   font-family: "Public Sans", sans-serif;
   font-size: 14px;
   font-weight: bold;
-}
-
-@media (min-width: 600px) {
-  .project .left-desc p:nth-of-type(2) {
-    padding: 0;
-    margin-top: 0;
-  }
-}
-
-@media (min-width: 900px) {
-  .project .left-desc p:nth-of-type(2) {
-    padding-top: 8px;
-  }
 }
 
 .project .right-desc {
@@ -1365,7 +1216,7 @@ body {
 .project .right-desc h3 {
   color: #33323d;
   font-family: "Ibarra Real Nova", serif;
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 500;
 }
 
@@ -1391,8 +1242,7 @@ body {
   color: #33323da7;
   font-family: "Public Sans", sans-serif;
   font-size: 16px;
-  line-height: 30px;
-  margin-bottom: 32px;
+  line-height: 25px;
   text-align: justify;
 }
 
