@@ -9,9 +9,9 @@ const headerContentMarkup = `
         <div class="bar btmBar"></div>
       </div>
       <ul class="menu nav-menu">
+      <li class="menu-item"><a href="index.html?linkindex=0" class="link">Home</a></li>
+      <li class="menu-item"><a href="portfolio.html?linkindex=1" class="link">Portfolio</a></li>
         <li class="menu-item"><a href="#contact" class="link">Contact</a></li>
-        <li class="menu-item"><a href="portfolio.html?linkindex=1" class="link">Portfolio</a></li>
-        <li class="menu-item"><a href="index.html?linkindex=2" class="link">Home</a></li>
       </ul>
 `
 const footerContentMarkup = `

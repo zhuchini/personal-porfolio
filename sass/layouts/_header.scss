@@ -67,7 +67,7 @@
     .menu-item {
       // <li> list
       @include tablet-portrait-up {
-        float: right;
+        float: left;
       }
 
       // ----------- Mobile Menu Link Styles -----------

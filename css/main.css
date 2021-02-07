@@ -525,7 +525,7 @@ body {
 
 @media (min-width: 600px) {
   .header .nav-menu .menu-item {
-    float: right;
+    float: left;
   }
 }
 
